@@ -7,7 +7,7 @@
 - 1: Display the temperature in the UI rather than the console DONE
 - 2: Display an icon or image depending on the current weather
 - 3: add a form prompting user for the city.
-- 4: add a toggle for switching between farenheit and celcius
+- 4: add a toggle for switching between farenheit and celcius DONE
 
 */
 
