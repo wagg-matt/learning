@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/weather-icons-wind.min.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
+</head>
+<body class="bg-image">
+	<h1 class="title">Today's weather only because we're not that clever</h1>
+	<section class="main">
+		<article>
+			<h2 id="temp" class="temp"><span class="value"></span><i class="wi wi-celsius"></i><button id="temp-toggle" data-click-state="0">in Fahrenheit</button></h2>
+			<p id="description" class="description"><i class="wi"></i></p>
+			<ul class="weather-data">
+				<li class="weather-data__sunrise"><i class="wi wi-sunrise"></i></li>
+				<li class="weather-data__sunset"><i class="wi wi-sunset"></i></li>
+				<li class="weather-data__humidity"><i class="wi wi-humidity"></i></li>
+				<li class="weather-data__clouds"><i class="wi wi-cloud-refresh"></i></li>
+				<li class="weather-data__wind-speed"><i class="wi wi-windy"></i></li>
+				<li class="weather-data__wind-direction">Wind direction<i class="wi wi-wind"></i></li>
+			</ul>
+		</article>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="main.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
