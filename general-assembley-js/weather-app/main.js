@@ -57,14 +57,8 @@ app.localWeather = function(response) {
 
 app.tempToggle = function(tempCelsius) {
 	var button = $("#temp-toggle");
-	if(button.attr('data-click-state') == 1) {
-		// convert back to celsius
-		button.attr('data-click-state', 0);
-		button.text('in Fahrenheit');
-		$("#temp .value").text(tempCelsius);
-		$("#temp i").addClass('wi-celsius');
-		$("#temp i").removeClass('wi-fahrenheit');
-	} else {
+
+	if(button.attr('data-click-state') === '0') {
 		// convert to farenheit
 		button.attr('data-click-state', 1);
 		button.text('in Celsius');
@@ -73,6 +67,13 @@ app.tempToggle = function(tempCelsius) {
 		$("#temp .value").text(tempFahrenheit);
 		$("#temp i").removeClass('wi-celsius');
 		$("#temp i").addClass('wi-fahrenheit');
+	}else if(button.attr('data-click-state') === '1') {
+		// convert back to celsius
+		button.attr('data-click-state', 0);
+		button.text('in Fahrenheit');
+		$("#temp .value").text(tempCelsius);
+		$("#temp i").addClass('wi-celsius');
+		$("#temp i").removeClass('wi-fahrenheit');
 	};
 };
 
